@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="EcoMonedasWeb.Principal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>Ecomonedas</title>
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <link href="Content/bootstrapPulse.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="Content/bootstrap-united.min.css" rel="stylesheet" />
+    <link href="Content/sticky-footer.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+       <div class="bg-success border p-4 rounded m-1" >
+           <div class="bg-white  rounded">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <h1>  </h1>
+            </asp:ContentPlaceHolder>
+      
+             <footer>
+                  <div class="rounded m-2  bg-danger ">
+                    <asp:Label ID="lblCopyright" runat="server" Text="edicion de color de todas las paginas en el Principal.Master"></asp:Label>
+                </div>
+                 
+             </footer>
+            </div>
+       </div>
+    </form>
+</body>
+</html>
