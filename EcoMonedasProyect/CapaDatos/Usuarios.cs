@@ -15,7 +15,6 @@ namespace CapaDatos
             Materiales_Encabezado = new HashSet<Materiales_Encabezado>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int id { get; set; }
 
         [StringLength(50)]

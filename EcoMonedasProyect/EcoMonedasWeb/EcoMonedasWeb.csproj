@@ -88,6 +88,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Index.aspx" />
+    <Content Include="MantenimeintoUsuarios.aspx" />
+    <Content Include="MantenimientoAdministradores.aspx" />
     <Content Include="MantenimientoMateriales.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -143,6 +145,20 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MantenimeintoUsuarios.aspx.cs">
+      <DependentUpon>MantenimeintoUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimeintoUsuarios.aspx.designer.cs">
+      <DependentUpon>MantenimeintoUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoAdministradores.aspx.cs">
+      <DependentUpon>MantenimientoAdministradores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoAdministradores.aspx.designer.cs">
+      <DependentUpon>MantenimientoAdministradores.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MantenimientoMateriales.aspx.cs">
       <DependentUpon>MantenimientoMateriales.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -164,6 +180,16 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{76fba395-7420-46ce-865b-5dbc24eee765}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaLogica\CapaLogica.csproj">
+      <Project>{81d5a073-d2d0-4bce-a67d-eccff66cbce8}</Project>
+      <Name>CapaLogica</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

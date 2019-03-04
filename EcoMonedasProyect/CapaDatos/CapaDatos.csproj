@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{02F10053-8D7F-45E8-AD9F-FE4B600B8270}</ProjectGuid>
+    <ProjectGuid>{76FBA395-7420-46CE-865B-5DBC24EEE765}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CapaDatos</RootNamespace>
@@ -54,6 +54,7 @@
     <Compile Include="Administradores.cs" />
     <Compile Include="Billetera_Virtual.cs" />
     <Compile Include="Centro_Acopio.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="ContextEcomonedas.cs" />
     <Compile Include="Cupones_canje.cs" />
     <Compile Include="Cupones_Enca.cs" />

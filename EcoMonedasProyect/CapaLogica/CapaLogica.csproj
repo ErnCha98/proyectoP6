@@ -30,8 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\CapaDatos\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\CapaDatos\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,12 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="administradoresLN.cs" />
+    <Compile Include="materialesLN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rolLN.cs" />
+    <Compile Include="usuariosLN.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
-      <Project>{02f10053-8d7f-45e8-ad9f-fe4b600b8270}</Project>
+      <Project>{76FBA395-7420-46CE-865B-5DBC24EEE765}</Project>
       <Name>CapaDatos</Name>
     </ProjectReference>
   </ItemGroup>

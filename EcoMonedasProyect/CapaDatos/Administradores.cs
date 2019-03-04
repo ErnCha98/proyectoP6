@@ -8,7 +8,6 @@ namespace CapaDatos
 
     public partial class Administradores
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int id { get; set; }
 
         [StringLength(50)]
